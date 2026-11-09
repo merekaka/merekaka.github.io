@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic homepage of Chen Shuo, Master's student at the University of Science and Technology Beijing.">
+  <meta name="author" content="Chen Shuo">
+  <title>Chen Shuo | Academic Homepage</title>
+  <style>
+    :root {
+      --ink: #20242a;
+      --muted: #626b76;
+      --link: #245b9e;
+      --line: #e5e8ec;
+      --paper: #ffffff;
+      --soft: #f6f8fa;
+      --width: 900px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .page { width: min(var(--width), calc(100% - 40px)); margin: 0 auto; }
+    header { padding: 54px 0 34px; border-bottom: 1px solid var(--line); }
+    .intro { display: grid; grid-template-columns: 168px 1fr; gap: 34px; align-items: start; }
+    .portrait {
+      width: 168px; aspect-ratio: 1 / 1; border-radius: 3px;
+      background: #e9edf2; color: #536273; display: flex;
+      align-items: center; justify-content: center;
+      font-family: Arial, sans-serif; font-size: 42px; font-weight: 600;
+      overflow: hidden;
+    }
+    .portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    h1 { font-size: clamp(2rem, 5vw, 2.55rem); line-height: 1.15; margin: 0 0 10px; font-weight: 600; }
+    .affiliation { color: var(--muted); margin: 0 0 14px; }
+    .links { display: flex; flex-wrap: wrap; gap: 8px 17px; font-family: Arial, sans-serif; font-size: 14px; }
+    nav { display: flex; flex-wrap: wrap; gap: 22px; padding: 13px 0; font-family: Arial, sans-serif; font-size: 14px; border-bottom: 1px solid var(--line); }
+    nav a { color: #39434f; }
+    main { padding: 10px 0 46px; }
+    section { padding-top: 26px; }
+    h2 { font-size: 1.35rem; font-weight: 600; margin: 0 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+    p { margin: 8px 0 12px; }
+    ul { margin: 7px 0 12px; padding-left: 23px; }
+    .note { color: var(--muted); font-size: 14px; }
+    .item { margin: 12px 0 18px; }
+    .item-title { font-weight: 600; }
+    footer { border-top: 1px solid var(--line); padding: 20px 0 32px; color: var(--muted); font: 13px Arial, sans-serif; }
+    @media (max-width: 620px) {
+      header { padding-top: 32px; }
+      .intro { grid-template-columns: 104px 1fr; gap: 18px; }
+      .portrait { width: 104px; font-size: 30px; }
+      nav { gap: 12px 17px; }
+    }
+    @media (max-width: 390px) {
+      .intro { grid-template-columns: 1fr; }
+      .portrait { width: 112px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="intro">
+        <div class="portrait" aria-label="Profile photo placeholder">
+          <!-- To add your photo, put a file named profile.jpg in the same folder
+               and replace the initials below with: <img src="profile.jpg" alt="Chen Shuo"> -->
+          CS
+        </div>
+        <div>
+          <h1>Chen Shuo</h1>
+          <p class="affiliation">
+            Master's Student<br>
+            School of Computer and Communication Engineering<br>
+            University of Science and Technology Beijing
+          </p>
+          <div class="links">
+            <a href="mailto:1243622076@qq.com">Email</a>
+            <a href="https://github.com/merekaka" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#interests">Research Interests</a>
+      <a href="#education">Education</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am a Master's student in the School of Computer and Communication
+          Engineering at the University of Science and Technology Beijing.
+          My research interest is Computer Vision.
+        </p>
+        <p class="note">
+          This page is being updated. More information about my research and
+          academic activities will be added in due course.
+        </p>
+      </section>
+
+      <section id="interests">
+        <h2>Research Interests</h2>
+        <ul>
+          <li>Computer Vision</li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="item">
+          <div class="item-title">University of Science and Technology Beijing</div>
+          <div>Master's Student, School of Computer and Communication Engineering</div>
+          <div class="note">2026 – Present</div>
+        </div>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <p class="note">No public publications listed yet.</p>
+        <!-- Add only public, non-confidential publications here.
+             Do not list a manuscript currently under double-blind review. -->
+      </section>
+
+      <section id="projects">
+        <h2>Research Projects</h2>
+        <p class="note">Project information will be added soon.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:1243622076@qq.com">1243622076@qq.com</a></p>
+        <p>GitHub: <a href="https://github.com/merekaka" target="_blank" rel="noopener noreferrer">github.com/merekaka</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> Chen Shuo. All rights reserved.</div>
+    </footer>
+  </div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
